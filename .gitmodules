@@ -1,0 +1,7 @@
+[submodule "helix"]
+	path = helix
+	url = https://github.com/0x6b/helix
+	branch = japanese-word-boundary
+[submodule "wezterm"]
+	path = wezterm
+	url = https://github.com/wez/wezterm/

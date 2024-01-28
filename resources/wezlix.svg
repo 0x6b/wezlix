@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 155.9 155.9"
+	 style="enable-background:new 0 0 155.9 155.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#rect10_00000088105807396636641150000004229593944716181380_);}
+	.st1{fill:#4E49EE;}
+</style>
+<defs>
+	
+		<inkscape:path-effect  apply_no_radius="true" apply_with_radius="true" chamfer_steps="1" effect="fillet_chamfer" flexible="false" hide_knots="false" id="path-effect943" is_visible="true" lpeversion="1" method="auto" mode="F" only_selected="false" radius="10" satellites_param="F,0,0,1,0,2.6458333,0,1 @ F,0,0,1,0,2.6458333,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1" unit="px" use_knot_distance="true">
+		</inkscape:path-effect>
+	
+		<inkscape:path-effect  apply_no_radius="true" apply_with_radius="true" chamfer_steps="1" effect="fillet_chamfer" flexible="false" hide_knots="false" id="path-effect939" is_visible="true" lpeversion="1" method="auto" mode="C" only_selected="true" radius="10" satellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1" unit="px" use_knot_distance="true">
+		</inkscape:path-effect>
+	
+		<inkscape:path-effect  apply_no_radius="true" apply_with_radius="true" chamfer_steps="1" effect="fillet_chamfer" flexible="true" hide_knots="false" id="path-effect934" is_visible="true" lpeversion="1" method="auto" mode="F" only_selected="false" radius="10" satellites_param="F,1,0,1,0,0.1,0,1 @ F,1,0,1,0,0.1,0,1 @ F,1,0,1,0,0.1,0,1 @ F,1,0,1,0,0.1,0,1" unit="px" use_knot_distance="true">
+		</inkscape:path-effect>
+	
+		<inkscape:path-effect  apply_no_radius="true" apply_with_radius="true" chamfer_steps="1" effect="fillet_chamfer" flexible="true" hide_knots="false" id="path-effect3137" is_visible="true" lpeversion="1" method="auto" mode="F" only_selected="false" radius="10" satellites_param="F,1,0,1,0,0.1,0,1 @ F,1,0,1,0,0.1,0,1 @ F,1,0,1,0,0.1,0,1 @ F,1,0,1,0,0.1,0,1" unit="px" use_knot_distance="true">
+		</inkscape:path-effect>
+	
+		<inkscape:path-effect  apply_no_radius="true" apply_with_radius="true" chamfer_steps="1" effect="fillet_chamfer" flexible="true" hide_knots="false" id="path-effect2756" is_visible="true" lpeversion="1" method="auto" mode="F" only_selected="false" radius="20" satellites_param="F,1,0,1,0,0.2,0,1 @ F,1,0,1,0,0.2,0,1 @ F,1,0,1,0,0.2,0,1 @ F,1,0,1,0,0.2,0,1" unit="px" use_knot_distance="true">
+		</inkscape:path-effect>
+</defs>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" id="base" inkscape:current-layer="layer1" inkscape:cx="85.466562" inkscape:cy="106.8872" inkscape:document-rotation="0" inkscape:document-units="mm" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="847" inkscape:window-maximized="0" inkscape:window-width="1252" inkscape:window-x="54" inkscape:window-y="25" inkscape:zoom="2.8190618" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<linearGradient id="rect10_00000180332641608779837750000013959848964993100449_" gradientUnits="userSpaceOnUse" x1="-156.1934" y1="255.3404" x2="-156.1934" y2="200.9044" gradientTransform="matrix(2.8346 0 0 -2.8346 520.7056 725.131)">
+	<stop  offset="0" style="stop-color:#2B383F"/>
+	<stop  offset="1" style="stop-color:#172024"/>
+</linearGradient>
+<path id="rect10" inkscape:path-effect="#path-effect2756" sodipodi:type="rect" style="fill:url(#rect10_00000180332641608779837750000013959848964993100449_);" d="
+	M31.2,0h93.5c17.2,0,31.2,14,31.2,31.2v93.5c0,17.2-14,31.2-31.2,31.2H31.2C14,155.9,0,141.9,0,124.7V31.2C0,14,14,0,31.2,0L31.2,0z
+	"/>
+<g id="text3144" transform="matrix(0.84051205,0,0,0.84423619,11.628829,8.3486634)">
+	<path id="path854" class="st1" d="M31.8,62.7c0-3.5,3.5-5.7,12.1-5.7l-2.9,15.6C35.8,69.1,31.8,65.9,31.8,62.7z M54.7,101.4
+		c0,3.7-3.7,6.1-12.1,6.5l3-16.6C50.9,94.8,54.7,98,54.7,101.4L54.7,101.4z M39.7,135.4l2.6-15.4c20.5-1.9,28.6-10.2,28.6-19.3
+		c0-9.4-11.4-16.7-21.9-23.1l3.8-20.1c4.4,0.4,9.5,1.2,15.6,2.4l1.8-14c-4.6-0.7-9-1-13.1-1.2l3.1-15l-13.5-0.1l-2.6,15.2
+		C23.7,46.4,15.7,55,15.7,64.1c0,9.2,11.4,16.3,21.9,22.4l-3.8,21.1c-4.9-0.3-10.9-1.1-17.8-2.3l-2.7,14c5.8,0.7,11.3,1.1,16.2,1.2
+		l-3,14.7L39.7,135.4z"/>
+</g>
+<g>
+	<path class="st1" d="M120.8,82.7h-20.4v30.9H87V42.4h13.4v30.2h20.4V42.4h13.5v71.2h-13.5V82.7z"/>
+</g>
+</svg>
