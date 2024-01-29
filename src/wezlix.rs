@@ -1,8 +1,16 @@
-use std::{env::current_exe, error::Error, fs, process::Command};
+use std::{env::current_exe, error::Error, fs, path::PathBuf, process::Command};
 
+use clap::Parser;
 use xdg::BaseDirectories;
 
+#[derive(Parser)]
+struct Args {
+    /// Sets the input file to use
+    files: Vec<PathBuf>,
+}
+
 fn main() -> Result<(), Box<dyn Error>> {
+    let args = Args::parse();
     let config_path = BaseDirectories::with_prefix("wezlix")?.place_config_file("wezlix.lua")?;
     let bin_path = {
         let path = current_exe()?;
@@ -22,6 +30,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         .arg(config_path)
         .arg("start")
         .arg(bin_root.join("hx"))
+        .args(args.files.into_iter().map(|f| f.canonicalize().unwrap()))
         .spawn()?;
 
     Ok(())
