@@ -19,16 +19,31 @@ $ git clone --recursive https://github.com/0x6b/wezlix
 $ cargo run -- --release
 ```
 
-Please note that the `--release` flag is an option for the build script, `src/main.rs`, not for `cargo run`.
+Please note that the `--release` flag is an option for the build script, `src/wezlix-builder.rs`, not for `cargo run`.
 
 ## Usage
 
+For macOS, the build process will create an application bundle `Wezlix.app` in the `target/app` directory, which you can use as a standalone application.
+
 ```console
-$ ./target/app/Wezlix.app/Contents/MacOS/wezlix [FILES]
+$ ./target/app/Wezlix.app/Contents/MacOS/wezlix --help
+Usage: wezlix [OPTIONS] [FILES]...
+
+Arguments:
+  [FILES]...  Sets the input file to use
+
+Options:
+      --wezterm-config <WEZTERM_CONFIG>  Specifies a file to use for WezTerm configuration
+      --helix-config <HELIX_CONFIG>      Specifies a file to use for Helix configuration
+  -h, --help                             Print help
+
 $ # or double-click ./target/app/Wezlix.app
 ```
 
-For macOS, the build process will create an application bundle `Wezlix.app` in the `target/app` directory, which you can use as a standalone application.
+Default configuration files are placed at:
+
+- `$XDG_CONFIG_HOME/wezlix/wezlix.lua` for Wezlix-specific WezTerm configuration
+- `$XDG_CONFIG_HOME/wezlix/helix.toml` for Helix configuration
 
 ### Limitations
 
