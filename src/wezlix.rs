@@ -45,6 +45,9 @@ fn main() -> Result<(), Box<dyn Error>> {
         }
     };
     let bin_root = bin_path.parent().unwrap();
+    let current_dir = current_dir()?;
+    let current_dir =
+        if current_dir == PathBuf::from("/") { home::home_dir().unwrap() } else { current_dir };
 
     // run wezterm-gui in the parent directory of the bin_path
     let mut command = Command::new(bin_root.join("wezterm-gui"));
@@ -53,7 +56,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         .arg(wezterm_config)
         .arg("start")
         .arg("--cwd")
-        .arg(current_dir().unwrap())
+        .arg(current_dir)
         .arg(bin_root.join("hx"))
         .arg("--config")
         .arg(helix_config)
