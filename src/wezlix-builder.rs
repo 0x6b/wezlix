@@ -16,8 +16,9 @@ use apple_bundle::{
 };
 use clap::Parser;
 use fs_extra::{copy_items, dir::CopyOptions, remove_items};
+use resvg::render;
 use tiny_skia::{Pixmap, Transform};
-use usvg::{Options, TreeParsing};
+use usvg::{Options, Tree};
 
 fn main() -> Result<(), Box<dyn Error>> {
     WezlixBuilder::new().build()
@@ -178,10 +179,7 @@ impl WezlixBuilder {
             .join("wezlix.iconset");
         create_dir_all(&icons)?;
 
-        let rtree = resvg::Tree::from_usvg(&usvg::Tree::from_data(
-            &read(&self.env.app_icon)?,
-            &Options::default(),
-        )?);
+        let tree = Tree::from_data(&read(&self.env.app_icon)?, &Options::default())?;
 
         [
             (16, "16x16"),
@@ -198,10 +196,11 @@ impl WezlixBuilder {
         .iter()
         .for_each(|(s, name)| {
             let mut pixmap = Pixmap::new(*s, *s).unwrap();
-            rtree.render(
+            render(
+                &tree,
                 Transform::from_scale(
-                    *s as f32 / rtree.size.width(),
-                    *s as f32 / rtree.size.height(),
+                    *s as f32 / tree.size().width(),
+                    *s as f32 / tree.size().height(),
                 ),
                 &mut pixmap.as_mut(),
             );
