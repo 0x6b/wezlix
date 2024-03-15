@@ -1,6 +1,6 @@
 [package]
 name = "wezlix"
-version = "0.1.5"
+version = "0.2.0"
 edition = "2021"
 default-run = "wezlix-builder"
 
@@ -30,3 +30,7 @@ apple-bundle = "0.1.4"
 # Configuration directory
 xdg = "2.5.2"
 home = "0.5.9"
+
+# Deserialize configuration
+serde = { version = "1.0.197", features = ["derive"] }
+toml = "0.8.11"
