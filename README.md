@@ -7,8 +7,8 @@
 This repository contains:
 
 - Git submodules for
-    - the [wez/wezterm](https://github.com/wez/wezterm/)
-    - a [fork](https://github.com/0x6b/helix) of Helix editor, based on [23.10](https://github.com/helix-editor/helix/releases/tag/23.10), with Japanese specific modifications ([diff](https://github.com/helix-editor/helix/compare/23.10...0x6b:helix:japanese-word-boundary))
+  - the [wez/wezterm](https://github.com/wez/wezterm/)
+  - a [fork](https://github.com/0x6b/helix) of Helix editor, based on [24.03](https://github.com/helix-editor/helix/releases/tag/24.03), with Japanese specific modifications ([diff](https://github.com/helix-editor/helix/compare/24.03...0x6b:helix:japanese-word-boundary))
 - A simple launcher
 - A build script to build both of them, and to create an application bundle for macOS
 
@@ -45,9 +45,9 @@ Default configuration files are placed at:
 - `$XDG_CONFIG_HOME/wezlix/wezlix.lua` for Wezlix-specific WezTerm configuration
 - `$XDG_CONFIG_HOME/wezlix/helix.toml` for Helix configuration
 - `$XDG_CONFIG_HOME/wezlix/env.toml` for environment variables which will be set while launching the program i.e.
-    ```toml
-    PATH = "/home/username/.cargo/bin:/usr/local/bin:/usr/bin:/bin"
-    ```
+  ```toml
+  PATH = "/home/username/.cargo/bin:/usr/local/bin:/usr/bin:/bin"
+  ```
 
 ### Limitations
 
