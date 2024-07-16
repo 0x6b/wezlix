@@ -2,14 +2,14 @@ use std::{
     collections::HashMap,
     env::{current_dir, current_exe},
     error::Error,
-    fs,
-    fs::read_to_string,
+    fs::{read_link, read_to_string, symlink_metadata},
     path::PathBuf,
     process::Command,
 };
 
 use clap::Parser;
 use home::home_dir;
+use toml::from_str;
 use xdg::BaseDirectories;
 
 #[derive(Parser)]
@@ -53,9 +53,9 @@ fn main() -> Result<(), Box<dyn Error>> {
         let path = current_exe()?;
 
         // follow symlink
-        let metadata = fs::symlink_metadata(&path)?;
+        let metadata = symlink_metadata(&path)?;
         match metadata.file_type().is_symlink() {
-            true => fs::read_link(path)?.canonicalize()?,
+            true => read_link(path)?.canonicalize()?,
             false => path,
         }
     };
@@ -63,7 +63,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let current_dir = current_dir()?;
     let current_dir =
         if current_dir == PathBuf::from("/") { home_dir().unwrap() } else { current_dir };
-    let env_vars: EnvironmentVariables = toml::from_str(&read_to_string(env)?)?;
+    let env_vars: EnvironmentVariables = from_str(&read_to_string(env)?)?;
 
     // run wezterm-gui in the parent directory of the bin_path
     let mut command = Command::new(bin_root.join("wezterm-gui"));
