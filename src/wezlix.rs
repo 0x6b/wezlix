@@ -15,15 +15,15 @@ use xdg::BaseDirectories;
 #[derive(Parser)]
 struct Args {
     /// Specifies a file to use for WezTerm configuration
-    #[clap(long)]
+    #[arg(long)]
     wezterm_config: Option<PathBuf>,
 
     /// Specifies a file to use for Helix configuration
-    #[clap(long)]
+    #[arg(long)]
     helix_config: Option<PathBuf>,
 
     /// Specifies a file to set environment variables
-    #[clap(long)]
+    #[arg(long)]
     env: Option<PathBuf>,
 
     /// Sets the input file to use
