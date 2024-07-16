@@ -34,17 +34,19 @@ type EnvironmentVariables = HashMap<String, String>;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let args = Args::parse();
+    let config_base = BaseDirectories::with_prefix("wezlix")?;
+
     let wezterm_config = match args.wezterm_config {
         Some(path) => path,
-        None => BaseDirectories::with_prefix("wezlix")?.place_config_file("wezlix.lua")?,
+        None => config_base.place_config_file("wezlix.lua")?,
     };
     let helix_config = match args.helix_config {
         Some(path) => path,
-        None => BaseDirectories::with_prefix("wezlix")?.place_config_file("helix.toml")?,
+        None => config_base.place_config_file("helix.toml")?,
     };
     let env = match args.env {
         Some(path) => path,
-        None => BaseDirectories::with_prefix("wezlix")?.place_config_file("env.toml")?,
+        None => config_base.place_config_file("env.toml")?,
     };
 
     let bin_path = {
