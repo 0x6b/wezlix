@@ -27,18 +27,18 @@ fn main() -> Result<(), Box<dyn Error>> {
 #[derive(Debug, Parser)]
 pub struct WezlixBuilder {
     /// Build with release mode
-    #[clap(long)]
+    #[arg(long)]
     pub release: bool,
 
     /// Run `cargo clean` for the dependencies before building
-    #[clap(long)]
+    #[arg(long)]
     pub clean: bool,
 
     /// Path to cargo executable
-    #[clap(long, env, default_value = "cargo")]
+    #[arg(long, env, default_value = "cargo")]
     pub cargo: String,
 
-    #[clap(skip)]
+    #[arg(skip)]
     env: Environment,
 }
 
