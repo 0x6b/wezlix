@@ -33,18 +33,18 @@ struct Args {
 type EnvironmentVariables = HashMap<String, String>;
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let args = Args::parse();
+    let Args { wezterm_config, helix_config, env, files } = Args::parse();
     let config_base = BaseDirectories::with_prefix("wezlix")?;
 
-    let wezterm_config = match args.wezterm_config {
+    let wezterm_config = match wezterm_config {
         Some(path) => path,
         None => config_base.place_config_file("wezlix.lua")?,
     };
-    let helix_config = match args.helix_config {
+    let helix_config = match helix_config {
         Some(path) => path,
         None => config_base.place_config_file("helix.toml")?,
     };
-    let env = match args.env {
+    let env = match env {
         Some(path) => path,
         None => config_base.place_config_file("env.toml")?,
     };
@@ -76,7 +76,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         .arg(bin_root.join("hx"))
         .arg("--config")
         .arg(helix_config)
-        .args(args.files)
+        .args(files)
         .envs(env_vars)
         .status()
         .unwrap();
