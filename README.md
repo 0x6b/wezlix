@@ -8,7 +8,7 @@ This repository contains:
 
 - Git submodules for
   - the [wez/wezterm](https://github.com/wez/wezterm/)
-  - a [fork](https://github.com/0x6b/helix) of Helix editor, based on [24.03](https://github.com/helix-editor/helix/releases/tag/24.03), with Japanese specific modifications ([diff](https://github.com/helix-editor/helix/compare/24.03...0x6b:helix:japanese-word-boundary))
+  - a [fork](https://github.com/0x6b/helix) of Helix editor, based on [24.07](https://github.com/helix-editor/helix/releases/tag/24.07), with Japanese specific modifications ([diff](https://github.com/helix-editor/helix/compare/24.07...0x6b:helix:japanese-word-boundary))
 - A simple launcher
 - A build script to build both of them, and to create an application bundle for macOS
 
