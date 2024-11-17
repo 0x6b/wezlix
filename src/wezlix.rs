@@ -13,6 +13,7 @@ use toml::from_str;
 use xdg::BaseDirectories;
 
 #[derive(Parser)]
+#[clap(about, version)]
 struct Args {
     /// Specifies a file to use for WezTerm configuration
     #[arg(long)]
