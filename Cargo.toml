@@ -3,6 +3,7 @@ name = "wezlix"
 version = "0.4.2"
 edition = "2021"
 default-run = "wezlix-builder"
+description = "WezTerm as a UI shell for Helix editor"
 
 [[bin]]
 name = "wezlix-builder"
