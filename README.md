@@ -7,8 +7,8 @@
 This repository contains:
 
 - Git submodules for
-  - the [wez/wezterm](https://github.com/wez/wezterm/)
-  - a [fork](https://github.com/0x6b/helix) of Helix editor, based on [24.07](https://github.com/helix-editor/helix/releases/tag/24.07), with Japanese specific modifications ([diff](https://github.com/helix-editor/helix/compare/24.07...0x6b:helix:japanese-word-boundary))
+    - the [wez/wezterm](https://github.com/wez/wezterm/)
+    - a [fork](https://github.com/0x6b/helix) of Helix editor, based on [25.01](https://github.com/helix-editor/helix/releases/tag/25.01), with Japanese specific modifications ([diff](https://github.com/helix-editor/helix/compare/25.01...0x6b:helix:japanese-word-boundary))
 - A simple launcher
 - A build script to build both of them, and to create an application bundle for macOS
 
@@ -19,11 +19,16 @@ $ git clone --recursive https://github.com/0x6b/wezlix
 $ cargo run -- --release
 ```
 
-Please note that the `--release` flag is an option for the build script, `src/wezlix-builder.rs`, not for `cargo run`.
+Please note that the
+`--release` flag is an option for the build script,
+`src/wezlix-builder.rs`, not for
+`cargo run`.
 
 ## Usage
 
-For macOS, the build process will create an application bundle `Wezlix.app` in the `target/app` directory, which you can use as a standalone application.
+For macOS, the build process will create an application bundle
+`Wezlix.app` in the
+`target/app` directory, which you can use as a standalone application.
 
 ```console
 $ ./target/app/Wezlix.app/Contents/MacOS/wezlix --help
@@ -42,12 +47,15 @@ $ # or double-click ./target/app/Wezlix.app
 
 Default configuration files are placed at:
 
-- `$XDG_CONFIG_HOME/wezlix/wezlix.lua` for Wezlix-specific WezTerm configuration
-- `$XDG_CONFIG_HOME/wezlix/helix.toml` for Helix configuration
-- `$XDG_CONFIG_HOME/wezlix/env.toml` for environment variables which will be set while launching the program i.e.
-  ```toml
-  PATH = "/home/username/.cargo/bin:/usr/local/bin:/usr/bin:/bin"
-  ```
+-
+`$XDG_CONFIG_HOME/wezlix/wezlix.lua` for Wezlix-specific WezTerm configuration
+-
+`$XDG_CONFIG_HOME/wezlix/helix.toml` for Helix configuration
+-
+`$XDG_CONFIG_HOME/wezlix/env.toml` for environment variables which will be set while launching the program i.e.
+```toml
+PATH = "/home/username/.cargo/bin:/usr/local/bin:/usr/bin:/bin"
+```
 
 ### Limitations
 
