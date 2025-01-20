@@ -1,6 +1,6 @@
 [package]
 name = "wezlix"
-version = "0.4.4"
+version = "0.4.5"
 edition = "2021"
 default-run = "wezlix-builder"
 description = "WezTerm as a UI shell for Helix editor"
