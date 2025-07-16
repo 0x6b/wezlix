@@ -7,8 +7,8 @@
 This repository contains:
 
 - Git submodules for
-    - the [wez/wezterm](https://github.com/wez/wezterm/)
-    - a [fork](https://github.com/0x6b/helix) of Helix editor, based on [25.01](https://github.com/helix-editor/helix/releases/tag/25.01), with Japanese specific modifications ([diff](https://github.com/helix-editor/helix/compare/25.01...0x6b:helix:japanese-word-boundary))
+  - the [wez/wezterm](https://github.com/wez/wezterm/)
+  - a [fork](https://github.com/0x6b/helix) of Helix editor, based on [25.07](https://github.com/helix-editor/helix/releases/tag/25.07), with Japanese specific modifications ([diff](https://github.com/helix-editor/helix/compare/25.07...0x6b:helix:japanese-word-boundary))
 - A simple launcher
 - A build script to build both of them, and to create an application bundle for macOS
 
@@ -48,11 +48,13 @@ $ # or double-click ./target/app/Wezlix.app
 Default configuration files are placed at:
 
 -
-`$XDG_CONFIG_HOME/wezlix/wezlix.lua` for Wezlix-specific WezTerm configuration
--
-`$XDG_CONFIG_HOME/wezlix/helix.toml` for Helix configuration
--
+
+## `$XDG_CONFIG_HOME/wezlix/wezlix.lua` for Wezlix-specific WezTerm configuration
+
+## `$XDG_CONFIG_HOME/wezlix/helix.toml` for Helix configuration
+
 `$XDG_CONFIG_HOME/wezlix/env.toml` for environment variables which will be set while launching the program i.e.
+
 ```toml
 PATH = "/home/username/.cargo/bin:/usr/local/bin:/usr/bin:/bin"
 ```
