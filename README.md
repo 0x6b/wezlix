@@ -47,13 +47,9 @@ $ # or double-click ./target/app/Wezlix.app
 
 Default configuration files are placed at:
 
--
-
-## `$XDG_CONFIG_HOME/wezlix/wezlix.lua` for Wezlix-specific WezTerm configuration
-
-## `$XDG_CONFIG_HOME/wezlix/helix.toml` for Helix configuration
-
-`$XDG_CONFIG_HOME/wezlix/env.toml` for environment variables which will be set while launching the program i.e.
+- `$XDG_CONFIG_HOME/wezlix/wezlix.lua` for Wezlix-specific WezTerm configuration
+- `$XDG_CONFIG_HOME/wezlix/helix.toml` for Helix configuration
+- `$XDG_CONFIG_HOME/wezlix/env.toml` for environment variables which will be set while launching the program i.e.
 
 ```toml
 PATH = "/home/username/.cargo/bin:/usr/local/bin:/usr/bin:/bin"
