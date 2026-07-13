@@ -35,7 +35,7 @@ type EnvironmentVariables = HashMap<String, String>;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let Args { wezterm_config, helix_config, env, files } = Args::parse();
-    let config_base = BaseDirectories::with_prefix("wezlix")?;
+    let config_base = BaseDirectories::with_prefix("wezlix");
 
     let wezterm_config = match wezterm_config {
         Some(path) => path,
